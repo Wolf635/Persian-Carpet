@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"company" })
+
+<body>
+	<div class="wrapper">
+		<div class="company-background">
+			<div class="company-background__container">
+				<div class="company-background__image">
+					<img src="@img/company/company-bg.jpg" alt="Картинка">
+				</div>
+				<header class="header">
+					<div class="header__container header__container--height">
+						<div class="header__logo logo header__logo--height">
+							<a href="home.html"><img src="@img/header/logo.jpg" alt="logo" class="logo__img"></a>
+						</div>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="company.html" class="menu__link">о компании</a>
+									</li>
+									<li class="menu__item">
+										<a href="catalog.html" class="menu__link">каталог</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__actions header__actions--gap actions">
+							<a data-da=".menu__list , 550" href="tel:+71234567890" class="actions__phone">+7 (123) 456-78-90</a>
+							<div class="actions__social actions__social--gap social-actions">
+								<a href="#" class="social-actions__link social-actions__link--whatsapp"></a>
+								<a href="#" class="social-actions__link social-actions__link--telegram"></a>
+								<a data-da=".menu__body , 767" href="#" class="social-actions__link social-actions__link--vk"></a>
+								<a data-da=".menu__body , 767" href="#" class="social-actions__link social-actions__link--youtube"></a>
+							</div>
+						</div>
+						<div class="icon-menu"><span></span></div>
+					</div>
+				</header>
+				<main class="page">
+					<section class="page__company company">
+						<div class="company__container">
+							<h1 class="company__title">О компании</h1>
+							<div class="company__body">
+								<div class="company__innovations innovations">
+									<h2 class="innovations__title">Творческий подход и инновации</h2>
+									<h3 class="innovations__subtitle"> <span>–</span> вот девиз одного из самых известных брендов иранских
+										классических
+										ковров Farrahi Carpet</h3>
+								</div>
+								<div class="company__description">
+									Компания существует уже более 30 лет и известна, как первый
+									производитель ковров из полиэстера. Фабрика в своей работе
+									использует самые передовые технологии, которые в умелых руках
+									опытных работников превращают обычные и непримечательные мотки
+									пряжи в произведения искусства.
+								</div>
+								<div class="company__description company__description--twoo">
+									В процессе производства персидских ковров фабрика Farrahi Carpet
+									использует экологически чистые и гипоаллергенные материалы.
+									Благодаря высокой плотности ворса ковры имеют повышенную
+									износостойкость, они неприхотливы в уборке и не теряют свой
+									внешний первоначальный вид долгие годы
+								</div>
+							</div>
+							<div class="company__achievement company__achievement--width block-description">
+								<div class="block-description__text block-description__text--width">
+									<p>Ковры <span>Farrahi Carpet</span> – прекрасное сочетание многовековых традиций и достижений
+										технического прогресса!
+									</p>
+								</div>
+							</div>
+							<div class="company-background__mobile-image">
+								<img src="@img/company/city-mobile.jpg" alt="city" class="company-background__img">
+							</div>
+						</div>
+			</div>
+		</div>
+		<div class="company__footer">
+			<div class="company__container-big">
+				<div class="company__container-form">
+					<div class="company__wrapper">
+						<div class="company__feedback feedback">
+							<h2 class="feedback__title">
+								Мы всегда на связи и готовы ответить на любые Ваши вопросы
+							</h2>
+							<h3 class="feedback__subtitle">
+								Чтобы купить персидский ковёр и украсить свой дом настоящим
+								восточным чудом выберите из каталога подходящий по цвету,
+								размеру и орнаменту, заполните и отправьте форму заказа
+							</h3>
+							<div class="feedback__text">
+								<p>Мы свяжемся с Вами в самое ближайшее время</p>
+							</div>
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" class="company__form form-company" method="POST">
+							<div class="form-company__body">
+								<div class="form-company__inputs">
+									<input type="text" class="form-company__input" name="name" placeholder="Ваше имя" required />
+									<input type="tel" class="form-company__input" name="phone" placeholder="Ваш контактный телефон"
+										required />
+									<textarea class="form-company__text" name="text" placeholder="Задайте Ваш вопрос"></textarea>
+								</div>
+								<div class="form-company__contact">
+									<div class="form-company__button button-main">
+										<button type="submit" class="button-main__button button"><span>Заказать</span></button>
+										<div class="button-main__decor"></div>
+									</div>
+									<div class="company__social social-company">
+										<div class="social-company__description">Или свяжитесь<br> в мессенджерах</div>
+										<div class="social-company__icons">
+											<a href="#" class="social-company__icon">
+												<img src="@img/header/whatsapp.svg" alt="Картинка">
+											</a>
+											<a href="#" class="social-company__icon">
+												<img src="@img/header/telegramm.svg" alt="Картинка">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="company__decor decor-company">
+					<div class="decor-company__item"></div>
+				</div>
+				<div class="company__decor decor-company">
+					<div class="decor-company__right"></div>
+				</div>
+			</div>
+		</div>
+		</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
